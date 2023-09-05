@@ -8,7 +8,6 @@ class MovieList extends React.Component {
     this.state = {
       movies: [],
       isLoading: true,
-      error: null,
     };
   }
 
@@ -26,7 +25,7 @@ class MovieList extends React.Component {
   }
 
   render() {
-    const { movies, isLoading, error } = this.state;
+    const { movies, isLoading } = this.state;
 
     if (isLoading) {
       return <div>Loading...</div>;
